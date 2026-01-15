@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Banco Nación - Mobile Banking</title>
+  <style>
+    :root{
+      --bg-main:#0a7f93;
+      --bg-header:#1aa6c9;
+      --card:#1fb0d3;
+      --btn:#0f7f8f;
+      --white:#ffffff;
+    }
+
+    *{
+      box-sizing:border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      margin:0;
+      background:var(--bg-main);
+      color:var(--white);
+      min-height:100vh;
+    }
+
+    /* Header */
+    .top-bar{
+      background:var(--bg-header);
+      padding:14px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      font-weight:bold;
+    }
+
+    .classic{
+      display:flex;
+      align-items:center;
+      gap:6px;
+      font-size:14px;
+    }
+
+    /* Logo */
+    .logo{
+      text-align:center;
+      padding:20px 10px;
+      font-size:26px;
+      font-weight:bold;
+    }
+
+    /* Card */
+    .card{
+      background:var(--card);
+      margin:0 16px;
+      padding:20px;
+      border-radius:6px;
+    }
+
+    .card h3{
+      text-align:center;
+      margin-bottom:14px;
+      font-weight:normal;
+    }
+
+    input{
+      width:100%;
+      padding:12px;
+      border:none;
+      border-radius:4px;
+      margin-bottom:14px;
+      font-size:16px;
+    }
+
+    button{
+      width:100%;
+      padding:12px;
+      background:var(--btn);
+      border:none;
+      border-radius:4px;
+      color:white;
+      font-size:16px;
+      cursor:pointer;
+    }
+
+    /* Links */
+    .links{
+      text-align:center;
+      margin-top:16px;
+      font-size:14px;
+    }
+
+    .links a{
+      color:white;
+      font-weight:bold;
+      text-decoration:none;
+    }
+
+    .links p{
+      margin:10px 0;
+    }
+
+    /* Footer */
+    .footer{
+      position:fixed;
+      bottom:0;
+      width:100%;
+      background:#111;
+      text-align:center;
+      padding:12px;
+      font-weight:bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-bar">
+    <div>Mobile Banking</div>
+    <div class="classic">🏠 Versión Clásica</div>
+  </div>
+
+  <div class="logo">
+    🏦 Banco Nación
+  </div>
+
+  <div class="card">
+    <h3>Ingresá tu usuario</h3>
+    <input type="text" placeholder="">
+    <button>✔ Aceptar</button>
+  </div>
+
+  <div class="links">
+    <p>¿No sos usuario?<br>
+      <a href="#">Registrate y comenzá</a>
+    </p>
+    <p>¿Acceso bloqueado?<br>
+      <a href="#">Gestioná tu desbloqueo</a>
+    </p>
+  </div>
+
+  <div class="footer">
+    ✖ Salir
+  </div>
+
+</body>
+</html>
